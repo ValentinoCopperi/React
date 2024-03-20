@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './Cards.css'
 export function TwitterFollowCard({ username, name  }) {
 
 

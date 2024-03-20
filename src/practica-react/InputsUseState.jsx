@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function PracticaReact() {
+export default function InputUseState() {
     //INPUTS
     const [nombre,setNombre] = useState("Nombre...");
     const [nombres,setNombres] = useState([]);
@@ -12,8 +12,12 @@ export default function PracticaReact() {
     const hanndleNames = () => {
         setNombres([...nombres , nombre])
     }
+
+    //UseRef
+    
+
   return (
-        //INPUTS
+        // INPUTS
        <div>
             <p>Ingrese un nombre</p>
             <input type="text"  value={nombre} onChange={hanndleInput}/>

@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import { TwitterFollowCard } from './TwitterFollowCard'
-import GifExpertApp from './assets/GifExpertApp'
-import PracticaReact from './practica-react/PracticaReact'
+import { TwitterFollowCard } from './practica-react/TwitterFollowCard'
+import InputUseState from './practica-react/InputsUseState'
+import UseRef from './practica-react/UseRef'
+import Crud from './crudApp/Crud'
 const users = [
   {
     userName: 'franco',
@@ -22,33 +23,35 @@ const users = [
 ]
 
 function App() {
-
+  
   return (
-    //<GifExpertApp></GifExpertApp>
-    <PracticaReact></PracticaReact>
 
-    /*
-    <section className='App'>
-      {
-        users.map(user => {
-          const { userName, name, isFollowing } = user;
-          return (
-            <TwitterFollowCard
-              key={userName}
-              username={userName}
-              name={name}
-            >
-            </TwitterFollowCard>
-          )
-        })
-      }
-
-
-      <TwitterFollowCard name={"Valentino Copperi"} username={"midudev"} />
-      <TwitterFollowCard name={"Alejo IgoaRoca"} username={"juan"} />
-      <TwitterFollowCard name={"Juan Perez"} username={"juanperez"} />
-    </section>
-    */
+    <div className='app-container'>
+      {/* <InputUseState></InputUseState>
+      <hr />
+      <UseRef></UseRef>
+      <hr />
+      <div className="cards">
+        <strong>Renderizar card mediante MAP</strong>
+        <section className='App'>
+          {
+            users.map(user => {
+              const { userName, name, isFollowing } = user;
+              return (
+                <TwitterFollowCard
+                  key={userName}
+                  username={userName}
+                  name={name}
+                >
+                </TwitterFollowCard>
+              )
+            })
+          }
+        </section>
+      </div> */}
+      <Crud></Crud>
+    </div>
+    
   )
 }
 
