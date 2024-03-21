@@ -4,6 +4,7 @@ import { TwitterFollowCard } from './practica-react/TwitterFollowCard'
 import InputUseState from './practica-react/InputsUseState'
 import UseRef from './practica-react/UseRef'
 import Crud from './crudApp/Crud'
+import CrudApi from './crudApp/CrudApi'
 const users = [
   {
     userName: 'franco',
@@ -27,10 +28,20 @@ function App() {
   return (
 
     <div className='app-container'>
-      {/* <InputUseState></InputUseState>
+      <CrudApi></CrudApi>
+      {/* 
+      Aplicacion crud equipos futbol
+      <Crud></Crud>
+
+      Inputs con OnChange
+      <InputUseState></InputUseState>
       <hr />
+
+      UseRef
       <UseRef></UseRef>
       <hr />
+
+      Crear card de twitter mediante arreglo users
       <div className="cards">
         <strong>Renderizar card mediante MAP</strong>
         <section className='App'>
@@ -48,8 +59,9 @@ function App() {
             })
           }
         </section>
-      </div> */}
-      <Crud></Crud>
+      </div> 
+    */}
+
     </div>
     
   )

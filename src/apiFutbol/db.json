@@ -1,0 +1,34 @@
+{
+  "equipos": [
+    {
+      "id": 1,
+      "equipo": "Barcelona",
+      "pais": "Spain"
+    },
+    {
+      "id": 2,
+      "equipo": "Palmeiras",
+      "pais": "Brazil"
+    },
+    {
+      "id": 1710977301547,
+      "equipo": "Madrid",
+      "pais": "Spain"
+    },
+    {
+      "id": 1710977389439,
+      "equipo": "Madrid",
+      "pais": "Mexico"
+    },
+    {
+      "id": 1710977421182,
+      "equipo": "Guadalajara",
+      "pais": "Mexico"
+    },
+    {
+      "id": 1710977834527,
+      "equipo": "Madrid",
+      "pais": "Mexico"
+    }
+  ]
+}

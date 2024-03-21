@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function TableCrud({ equipos }) {
+export default function TableCrud({ equipos , setEditData , deleteEquipo}) {
   return (
     <>
       <h3>EquiposActuales</h3>
-      <table border='1'>
+      <table className="table">
         <thead>
           <tr>
-            <td>#</td>
+            <td>Id</td>
             <td>Equipo</td>
             <td>Pais</td>
             <td></td>
@@ -15,15 +15,15 @@ export default function TableCrud({ equipos }) {
         </thead>
         <tbody>
         {
-          equipos.length == 0 ? <td>No hay datos</td>
+          equipos.length == 0 ? <tr><td></td><td>No hay datos</td><td></td></tr>
           : equipos.map((equipo , index )=>{
             return <tr key={index}>
                     <td>{equipo.id}</td>
                     <td>{equipo.equipo}</td>
                     <td>{equipo.pais}</td>
                     <td>
-                      <button className='btn btn-success'>Editar</button>
-                      <button className='btn btn-danger'>Eliminar</button>
+                      <button className='btn btn-success' onClick={()=> setEditData(equipo)}>Editar</button>
+                      <button className='btn btn-danger' onClick={()=> deleteEquipo(equipo.id)}>Eliminar</button>
                     </td>
                   </tr>
           })
